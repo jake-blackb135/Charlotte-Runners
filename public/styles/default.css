@@ -1,0 +1,135 @@
+header{
+    background-color: green;
+}
+body{
+    font-family:"Nunito+Sans", sans-serif;
+    background-color: #BFD1E5;
+    color:#5E5D5C;
+    margin-bottom:70px;
+}
+.navbar{
+    border-bottom: thick double #32a1ce;
+    display: flex;
+  align-items: center;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+      
+}
+.rsvpForm {
+    display:inline;
+}
+.titleElement {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.eventDetails{
+    display:flex;
+}
+.btn-primary{
+    margin-bottom:70px;
+}
+main{
+    margin-top: 100px;
+    margin-left:100px;
+}
+.event-list{
+    display:block;
+    margin-left:45px;
+    color: #5E5D5C;
+    font-size: large;
+}
+
+header img {
+    width: 100px;
+    height:auto;
+}
+
+.small-img {
+    width: 50px;
+    height:auto;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.event-img{
+    width:300px;
+    height:auto;
+}
+
+.success{
+    background: rgba(108,192,112,0.7);
+    color: #fff;
+    width:70%;
+    margin: 0 auto 1rem auto;
+    text-align:center;
+    padding:0.5rem 0;
+}
+
+.error{
+    background: rgba(255,102,51,0.7);
+    color: #fff;
+    width:70%;
+    margin: 0 auto 1rem auto;
+    text-align:center;
+    padding:0.5rem 0;
+}
+
+.btn-link {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #0000EE;
+    padding: 0;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: left;
+}
+
+.profileDetails{
+    display:flex;
+}
+
+.userEvents{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.userRsvps{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.rsvpContent{
+    display:flex;
+}
+
+.rsvpTitle{
+    text-align: center;
+    padding-right:30px;   
+}
+.rsvpStatus{
+    margin-left: auto; 
+}
+.myRsvps{
+    display:flex;
+}
+.going{
+    margin-left:auto;
+}
+
+
+
+

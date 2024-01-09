@@ -1,0 +1,48 @@
+<%- include('../partials/header.ejs')%>
+        <h2>Welcome, <%=user.firstName%>!</h2>
+        <div class="profileDetails">
+        <div class="userEvents">
+        <%if (userEvents.length){%>
+            <p>You have created the following events</p>
+            <%userEvents.forEach(event=>{%>
+               <a href="/events/<%=event._id%>"><p><%=event.title%></p></a>
+                <div class="btn-group">
+                    <a href="/events/<%=event._id%>/edit"><img class="small-img" src="/images/pen-to-square-solid.svg" alt="edit"></a>
+                    <form action="/events/<%= event._id%>?_method=DELETE" method="POST">
+                        <button type="submit" class="btn-link">
+                            <img class="small-img" src="/images/trash-solid.svg" alt="Delete">
+                        </button>
+                    </form>
+                </div>
+            <%})%> 
+        <%}%>
+        
+        </div>
+        <div class="userRsvps">
+        <%if (rsvps.length){%>
+            <div class="myRsvps">
+                <p>My RSVPs</p>
+                <p class="going">Going?</p>
+            </div>
+            <%rsvps.forEach(rsvp=>{%>
+                
+                <div class="rsvpContent">
+                    <div class="rsvpTitle">
+                        <a href="/events/<%=rsvp.event._id%>"><p><%=rsvp.event.title%></p></a>
+                    </div>
+                    <div class="rsvpStatus">
+                        <p><%=rsvp.status%></p>
+                    </div>
+                </div>                
+            <%})%> 
+        <%}%>
+        </div>
+        </div>
+
+        
+    
+        
+        
+    </main>
+    <%- include('../partials/footer.ejs') %>
+    
